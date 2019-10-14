@@ -37,3 +37,12 @@ def reduce_to_total (array, starting_point = 0)
   starting_point
 end
 
+def reduce_to_all_true (array)
+  array.length.times do |x|
+    if array[x] == false 
+      return false 
+    end
+  end
+  true
+end
+
